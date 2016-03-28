@@ -2,7 +2,7 @@ require 'pry'
 
 class Fish
 
-  attr_accessor :species, :length, :color
+  attr_accessor :name, :species, :length, :color
 
   # Construct the initial state of a fish object
   #
@@ -11,7 +11,8 @@ class Fish
   # +color: a string represetning the color of a fish
   #
   # Returns the fish object
-  def initialize(species:, length:, color:)
+  def initialize(name:, species:, length:, color:)
+    @name = name
     @species = species
     @length = length
     @color = color
